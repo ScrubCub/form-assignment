@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="stylesheet.css">
+</head>
+<body>
+    <div class="container">
+        <div id="contains_image">
+            <img src="./halie-west-25xggax4bSA-unsplash.jpg" id="side_image">
+            <div class="logo">
+                <div id="logo_image">
+                    <img src="odin-lined.png" alt="Odin logo">
+                </div>
+                <div id="logo_text">
+                    <span>ODIN</span>
+                </div>
+            </div>
+            <p id="image_credits">Photo by <a href="https://unsplash.com/@haliewestphoto?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Halie West</a> on <a href="https://unsplash.com/photos/green-leaf-plant-in-close-up-photography-25xggax4bSA?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
+            </p>
+        </div>
+        <div class="signup_area">
+            <p id="signup_text">This is a mock-up of a signup form. Do NOT enter your personal details here. Something something you will grow in this company something. <br><br>Sign up now!</p>
+            <form action="https://httpbin.org/post" method="post">
+                <fieldset>
+                    <legend>Sign Up</legend>
+                    <div class="field_containers">
+                        <div class="input_fields">
+                            <label for="first_name">
+                                FIRST NAME *
+                                <input type="text" id="first_name" placeholder="First name" name="first_name" required>
+                            </label>
+                        </div>
+                        <div class="input_fields">
+                            <label for="last_name">
+                                LAST NAME *
+                                <input type="text" id="last_name" placeholder="Last name" name="last_name" required>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="field_containers">
+                        <div class="input_fields">
+                            <label for="email">
+                                EMAIL *
+                                <input type="email" id="email" placeholder="example@gmail.com" name="user_email" pattern="^[a-zA-Z0-9_.]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$" required>
+                            </label>
+                        </div>
+                        <div class="input_fields">
+                            <label for="phone_number">
+                                PHONE NUMBER
+                                <input type="tel" id="phone_number" name="user_phone_number" pattern="\d{11}"> 
+                            </label>
+                        </div>
+                    </div>
+                    <div class="field_containers" id="final_fields">
+                        <div class="input_fields">
+                            <label for="password">
+                                PASSWORD *
+                                <input type="password" id="password" name="user_password" pattern="^(?=.*[A-Za-z])(?=.*\d)(?=.*[@$!%*#?&])[A-Za-z\d@$!%*#?&]{8,}$" required>
+                            </label>
+                        </div>
+                        <div class="input_fields">
+                            <label for="password_confirmation">
+                                CONFIRM PASSWORD
+                                <input type="password" id="password_confirmation" pattern="^(?=.*[A-Za-z])(?=.*\d)(?=.*[@$!%*#?&])[A-Za-z\d@$!%*#?&]{8,}$" required>
+                            </label>
+                        </div>
+                    </div>
+                    <p id="password_creation_hint">Password must contain at least eight characters, a number, and a special character.</p>
+                    <p id="required_text">Fields with * are required.</p>
+                    <div id="create_account">
+                        <button type="submit" id="create_account_btn">Create account</button>
+                    </div>
+                </fieldset>
+            </form>
+            <div class="redirect">
+                <div id="login_redirect">
+                    <p id="redirect_link">Already have an account? <a href="somewhere dot com">Log in</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

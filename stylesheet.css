@@ -1,0 +1,177 @@
+ button, input[type="submit"], input[type="reset"] {
+	background: none;
+	border: none;
+	padding: 0;
+	cursor: pointer;
+}
+
+ html {
+    height: 100%;
+    width: 100%
+ }
+
+ @font-face {
+   font-family: odinFont;
+   src: url(./Norse-Bold.otf) format("opentype");
+ }
+
+ /* CaviarDreams font by Lauren THompson */
+ @font-face {
+   font-family: caviarDreams;
+   src: url(./CaviarDreams_Bold.ttf) format("truetype");
+ }
+
+ .container {
+    height: 100vh;
+    width: 75vw;
+    position: relative;
+    left: 12.5%;
+ }
+
+ #side_image {
+    height: 100vh;
+    width: 25vw;
+ }
+
+ .logo {
+    position: absolute;
+    height: 15vh;
+    width: 25vw;
+    top: 25%;
+    background-color: rgb(0,0,0,0.4);
+ }
+ .logo > div {
+    position: relative;
+    float: left;
+    clear: none;
+    height: 100%;
+    width: 25%;
+    left: 25%;
+ }
+
+ #logo_image img {
+   height: 100%;
+   width: 100%;
+ }
+
+ #image_credits {
+   color: white;
+   font-family: caviarDreams;
+   font-size: 0.75rem;
+   position: absolute;
+   bottom: 0%;
+   left: 6.25%;
+ }
+
+ #image_credits > a {
+   color: white;
+ }
+
+ #logo_text {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   box-sizing: border-box;
+ }
+
+ #logo_text span {
+   color: white;
+   font-family: odinFont;
+   font-size: 4rem;
+ }
+
+ .container > * {
+    float: left;
+    clear: none;
+ }
+
+#contains_image {
+    width: 25vw;
+}
+
+.signup_area {
+   font-family: caviarDreams;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgb(255,145,164, 0.15);
+    height: 100vh;
+    width: 50vw;
+    padding-left: 1rem;
+}
+
+
+#signup_text {
+    padding-bottom: 0.5rem;
+    padding-right: 1rem;
+    margin-top: 0;
+    display: block;
+}
+
+#password_creation_hint {
+   margin-top: 0.5rem;
+   font-family: inherit;
+   font-size: 0.6rem;
+   max-width: 180px;
+
+}
+
+#required_text {
+   font-weight: bolder;
+   font-size: 75%;
+
+}
+
+
+.input_fields input {
+   display: block;
+   border-radius: 3px;
+   box-shadow: 2px 2px 2px rgb(0,0,0,0.2);
+}
+
+input:user-invalid {
+   border: 2px solid rgb(229,43,80, 0.3);
+}
+
+input:user-valid {
+   border: 2px solid rgb(0,255,42, 0.3);
+}
+
+input:focus {
+   outline-width: thin;
+   background-color: rgb(201,255,229, 0.5);
+}
+
+.field_containers {
+   box-sizing: border-box;
+   display: flex;
+   justify-content: space-between;
+   padding-right: 10vw;
+   margin-bottom: 1.5em;
+   font-size: 0.75rem;
+}
+
+#final_fields {
+   margin-bottom: 0;
+}
+
+legend {
+   font-family: caviarDreams;
+   padding-left: 0px;
+}
+
+fieldset {
+   padding-top: 1rem;
+   margin-right: 1rem;
+   margin-bottom: 1rem;
+}
+
+#create_account_btn {
+   color: white;
+   font-weight: bolder;
+   outline: 2px solid rgb(0,0,0,0.9);
+   background-color: rgb(59,122,87,0.8);
+   border-radius: 5px;
+   padding: 0.5rem 2rem;
+}
